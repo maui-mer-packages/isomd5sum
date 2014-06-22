@@ -49,6 +49,7 @@ Python bindings for isomd5sum.
 %setup -q -n %{name}-%{version}/upstream
 
 # >> setup
+sed -i 's,LIBDIR = lib64,LIBDIR = lib,g' Makefile
 # << setup
 
 %build
